@@ -23,5 +23,9 @@
           #   run: echo '${{ toJSON(github) }}'
           # - name : Print github variables
           #   run : echo ${{ github.event_name }}
-        
+    deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Deploy
+          run : echo "Deploying....."
         
