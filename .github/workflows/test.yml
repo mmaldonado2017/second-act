@@ -13,5 +13,7 @@
             uses: actions/checkout@v3
           - name : Print
             run: echo '${{ toJSON(github) }}'
+          - name : Print github variables
+            run : echo ${{ github.event_name }}
         
         
