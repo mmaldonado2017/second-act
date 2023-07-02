@@ -7,4 +7,4 @@
         runs-on: ubuntu-latest
         steps:
           - name: Github Context
-            run : echo ${{ toJson(github) }}
+            run : echo "${{ toJson(github) }}"
