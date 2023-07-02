@@ -1,10 +1,13 @@
 
   name: Test-Workflow
   on:
+    pull_request:
+      types:
+        - opened
     workflow_dispatch:
-    push:
-        paths-ignore:
-            - README.md
+    # push:
+    #     paths-ignore:
+    #         - README.md
 
   jobs:
     test:
