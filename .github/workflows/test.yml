@@ -20,10 +20,6 @@
             run : npm ci
           - name : Run Tests
             run : npm test
-          # - name : Print
-          #   run: echo '${{ toJSON(github) }}'
-          # - name : Print github variables
-          #   run : echo ${{ github.event_name }}
     deploy:
       needs: test
       runs-on: ubuntu-latest
